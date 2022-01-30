@@ -1,3 +1,3 @@
-# 1823_DOM
+# Ceep - Task/shopping list
 
-Pesquisar sobre "data attributes"
+Code developed during an introductory JS training course in Alura. 
