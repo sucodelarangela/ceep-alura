@@ -10,7 +10,7 @@ const criarTarefa = evento => {
   evento.preventDefault()
 
   const lista = document.querySelector('[data-list]')
-  let input = document.querySelector('[data-form-input]')
+  const input = document.querySelector('[data-form-input]')
   const valor = input.value
 
   const tarefa = document.createElement('li')
