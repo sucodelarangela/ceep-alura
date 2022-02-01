@@ -10,7 +10,7 @@ const lista = document.querySelector('[data-list]')
 
 listaLocal.forEach(itemDaLista => {
   const tarefa = document.createElement('li')
-  tarefa.classList.add('task')
+  tarefa.classList.add(`${itemDaLista.classe}`)
   tarefa.innerHTML = `<p class="content">${itemDaLista.valor}</p>`
   tarefa.appendChild(BotaoConclui())
   tarefa.appendChild(BotaoDeleta())
