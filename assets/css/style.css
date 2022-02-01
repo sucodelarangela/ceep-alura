@@ -125,6 +125,14 @@ body {
   padding: 1rem 3rem;
 }
 
+.done {
+  color: #f6f1d1;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 1rem 3rem;
+}
+
 .check-button,
 .delete-button {
   background-color: #f6f1d1;
@@ -135,7 +143,8 @@ body {
   cursor: pointer;
 }
 
-.task.done .check-button {
+/*.task*/
+.done .check-button {
   background-color: #46494c;
   color: #f6f1d1;
 }
@@ -149,7 +158,8 @@ body {
   border-radius: 50%;
 }
 
-.task.done .check-icon {
+/*.task*/
+.done .check-icon {
   background-color: #0b2027;
 }
 
@@ -157,7 +167,8 @@ body {
   margin: 0;
 }
 
-.task.done .content {
+/*.task*/
+.done .content {
   text-decoration: line-through;
 }
 

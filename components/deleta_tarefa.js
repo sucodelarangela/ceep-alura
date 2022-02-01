@@ -9,10 +9,14 @@ const BotaoDeleta = () => {
 
 const deletarTarefa = evento => {
   const botaoDeleta = evento.target
-  const tarefaCompleta = botaoDeleta.parentElement
-  tarefaCompleta.remove()
-
-  return botaoDeleta
+  const itemDaLista = botaoDeleta.parentNode
+  const nomeDoItem = itemDaLista.querySelector('p').textContent
+  const listaLocal = JSON.parse(localStorage.getItem('tarefas') || '[]')
+  const posicaoDoItem = listaLocal.findIndex(item => item.valor === nomeDoItem)
+  console.log(posicaoDoItem)
+  listaLocal.splice(posicaoDoItem, 1)
+  localStorage.setItem('tarefas', JSON.stringify(listaLocal))
+  location.reload()
 }
 
 export default BotaoDeleta

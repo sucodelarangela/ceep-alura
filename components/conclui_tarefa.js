@@ -11,11 +11,20 @@ const BotaoConclui = () => {
 const concluirTarefa = evento => {
   // para saber que elemento foi clicado, usa-se a propriedade .target:
   const botaoConclui = evento.target
+  const itemDaLista = botaoConclui.parentNode
+  const nomeDoItem = itemDaLista.querySelector('p').textContent
+  const listaLocal = JSON.parse(localStorage.getItem('tarefas') || '[]')
+  const item = listaLocal.find(item => item.valor === nomeDoItem)
 
-  // para atribuir a ação do evento a um elemento pai, no caso, nossa <li>, usa-se a propriedade .parentElement:
-  const tarefaCompleta = botaoConclui.parentElement
-
-  tarefaCompleta.classList.toggle('done')
+  if (item.classe === 'task') {
+    item.classe = 'done'
+    localStorage.setItem('tarefas', JSON.stringify(listaLocal))
+    location.reload()
+  } else if (item.classe === 'done') {
+    item.classe = 'task'
+    localStorage.setItem('tarefas', JSON.stringify(listaLocal))
+    location.reload()
+  }
 }
 
 // semelhantemente ao IIFE, podemos exportar nosso componente criado como um módulo. Para isso, usamos o método export default + nome do componente
