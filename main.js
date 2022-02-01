@@ -8,14 +8,13 @@ const novaTarefa = document.querySelector('[data-form-button]')
 const listaLocal = JSON.parse(localStorage.getItem('tarefas') || '[]')
 const lista = document.querySelector('[data-list]')
 
-listaLocal.forEach((itemDaLista, indice) => {
+listaLocal.forEach(itemDaLista => {
   const tarefa = document.createElement('li')
   tarefa.classList.add('task')
+  tarefa.innerHTML = `<p class="content">${itemDaLista.valor}</p>`
+  tarefa.appendChild(BotaoConclui())
+  tarefa.appendChild(BotaoDeleta())
   lista.appendChild(tarefa)
-
-  const conteudo = document.querySelectorAll('.task')
-  conteudo[indice].innerHTML = itemDaLista.valor
-  console.log(lista)
 })
 
 // "Escutador" de eventos
