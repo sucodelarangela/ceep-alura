@@ -2,7 +2,11 @@ _For the English version of this README, click [here](#English)_
 
 # Ceep - Lista de tarefas / compras
 
+<div align="center">
+
 ![](/assets/og_image.PNG)
+
+</div>
 
 ## Visão geral
 
@@ -63,7 +67,7 @@ Code developed during an introductory DOM manipulation with JavaScript training 
 ```js
 [data-attributes]
 `template${string}`
-Função imediata - IIFE
+Immediately Invoked Function Expression - IIFE
 export default
 import from
 .innerHTML
