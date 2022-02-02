@@ -12,6 +12,8 @@ _For the English version of this README, click [here](#English)_
 
 Código desenvolvido durante um curso introdutório de manipulação da DOM com JavaScript da **[Alura](https://www.alura.com.br/)**.
 
+Não foi trabalhado o HTML e CSS da página, estes foram códigos que já recebemos prontos pois o objetivo principal é o foco em JavaScript.
+
 ## Conteúdo do curso
 
 ```js
@@ -61,6 +63,8 @@ Alterei o código para salvar os itens/tarefas no localStorage, preservando seu 
 ## Overview
 
 Code developed during an introductory DOM manipulation with JavaScript training course in **[Alura](https://www.alura.com.br/)**.
+
+Changes were not applied to the HTML and CSS part of the code (which were already available to us) since the main objective is focusing on the functionality with JavaScript.
 
 ## Training course content
 
